@@ -17,7 +17,7 @@ Many electricity consumers are unaware of how much electricity individual applia
 ## 💡 Proposed Solution
 ## Live Website
 
-[Open Electricity Consumption Analyzer](https://effortless-kangaroo-c57fb8.netlify.app/)
+https://effortless-kangaroo-c57fb8.netlify.app/
 
 The Electricity Consumption Analyzer provides an interactive platform where users can enter their appliance details and usage patterns. The application calculates estimated energy consumption, analyzes appliance-wise usage, estimates electricity costs, and suggests ways to improve energy efficiency.
 
