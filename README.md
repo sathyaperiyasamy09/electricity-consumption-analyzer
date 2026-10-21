@@ -15,6 +15,9 @@ The project focuses on improving energy awareness through simple, interactive, a
 Many electricity consumers are unaware of how much electricity individual appliances consume and which appliances contribute most to their overall usage. Without appliance-level insights, identifying energy wastage and making informed decisions to reduce electricity expenses can be difficult.
 
 ## 💡 Proposed Solution
+## Live Website
+
+[Open Electricity Consumption Analyzer](https://effortless-kangaroo-c57fb8.netlify.app/)
 
 The Electricity Consumption Analyzer provides an interactive platform where users can enter their appliance details and usage patterns. The application calculates estimated energy consumption, analyzes appliance-wise usage, estimates electricity costs, and suggests ways to improve energy efficiency.
 
