@@ -5,7 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/electricity-consumption-analyzer/',
+    // Netlify serves from the root; GitHub Pages serves from the repo subpath.
+    base: process.env.NETLIFY ? '/' : '/electricity-consumption-analyzer/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
