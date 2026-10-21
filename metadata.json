@@ -1,0 +1,6 @@
+{
+  "name": "WattWise — Smart Electricity Analyzer",
+  "description": "High-precision domestic electricity telemetry, Tamil Nadu LT-1A tariff modeling, 500-unit cliff monitor, and smart appliance energy simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

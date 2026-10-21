@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-label: "JetBrains Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* CSS Theme Variables */
+:root, .theme-slate {
+  --canvas-bg: #090e1a;
+  --canvas-bg-glass: rgba(9, 14, 26, 0.88);
+  --card-bg: #111827;
+  --card-bg-elevated: #1e293b;
+  --card-bg-subtle: #0d1322;
+  --card-border: #1e293b;
+  --card-border-subtle: rgba(255, 255, 255, 0.07);
+  --card-border-hover: rgba(56, 189, 248, 0.4);
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --color-primary: #38bdf8;
+  --color-primary-glow: rgba(56, 189, 248, 0.25);
+  --color-success: #10b981;
+  --color-success-glow: rgba(16, 185, 129, 0.25);
+  --color-warning: #f59e0b;
+  --color-warning-glow: rgba(245, 158, 11, 0.25);
+  --color-danger: #ef4444;
+  --color-danger-glow: rgba(239, 68, 68, 0.25);
+  --color-indigo: #818cf8;
+
+  --shadow-elevation: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+.theme-light {
+  --canvas-bg: #f8fafc;
+  --canvas-bg-glass: rgba(248, 250, 252, 0.92);
+  --card-bg: #ffffff;
+  --card-bg-elevated: #f1f5f9;
+  --card-bg-subtle: #f8fafc;
+  --card-border: #e2e8f0;
+  --card-border-subtle: rgba(0, 0, 0, 0.06);
+  --card-border-hover: rgba(2, 132, 199, 0.4);
+  
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+  
+  --color-primary: #0284c7;
+  --color-primary-glow: rgba(2, 132, 199, 0.15);
+  --color-success: #059669;
+  --color-success-glow: rgba(5, 150, 105, 0.15);
+  --color-warning: #d97706;
+  --color-warning-glow: rgba(217, 119, 6, 0.15);
+  --color-danger: #dc2626;
+  --color-danger-glow: rgba(220, 38, 38, 0.15);
+  --color-indigo: #6366f1;
+
+  --shadow-elevation: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.theme-cyber {
+  --canvas-bg: #001200;
+  --canvas-bg-glass: rgba(0, 18, 0, 0.9);
+  --card-bg: #001f01;
+  --card-bg-elevated: #002601;
+  --card-bg-subtle: #001800;
+  --card-border: #002601;
+  --card-border-subtle: #003502;
+  --card-border-hover: rgba(0, 240, 255, 0.4);
+  
+  --text-main: #8dff7b;
+  --text-muted: #7fb57d;
+  --text-dim: #00890c;
+  
+  --color-primary: #00f0ff;
+  --color-primary-glow: rgba(0, 240, 255, 0.35);
+  --color-success: #60ff98;
+  --color-success-glow: rgba(96, 255, 152, 0.35);
+  --color-warning: #ffb868;
+  --color-warning-glow: rgba(255, 184, 104, 0.35);
+  --color-danger: #ff5252;
+  --color-danger-glow: rgba(255, 82, 82, 0.35);
+  --color-indigo: #758aff;
+
+  --shadow-elevation: 0 4px 24px rgba(0, 240, 255, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: var(--canvas-bg);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Typography Scale */
+.font-headline-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-lg-mobile {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-title-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.font-title-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.font-body-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13.5px;
+  line-height: 20px;
+}
+
+.font-label-numeric {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-label-md {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-label-sm {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Material Symbols alignment helper */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
